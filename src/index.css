@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 600 !important;
+}
+
+/* CALENDAR */
+
+.calendar-container {
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+  width: 100%;
+}
+
+.rbc-calendar {
+  height: 100% !important;
+  overflow-y: auto;
+}
+
+.fab {
+  position: fixed !important;
+  width: auto !important;
+  height: auto !important;
+  bottom: 33px;
+  z-index: 9;
+  padding: 20px !important;
+}
+
+.button-add {
+  right: 32px;
+}
+
+.button-del {
+  left: 32px;
+}
+
+.navbar {
+  align-items: center;
+  background-color: #1890ff;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 8px;
+}
+.navbar-name {
+  font-size: large;
+  font-weight: bold;
+}
+
+.loading {
+  align-items: center;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+  border: 6px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-left-color: #1890ff;
+  height: 96px;
+  width: 96px;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*  AUTH */
+
+.auth-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://besthqwallpapers.com/Uploads/11-4-2020/128526/thumb2-blue-rhombuses-3d-art-rhombuses-patterns-geometric-shapes-rhombic-patterns.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form-container {
+  background-color: #fff;
+  box-shadow: 1px 1px 3px;
+  padding: 20px;
+  width: 600px;
+}
+@media (max-width: 575px) {
+  .form-container {
+    width: 90%;
+  }
+}
+
+.form-title {
+  text-align: center;
+}
+.auth-footer {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
